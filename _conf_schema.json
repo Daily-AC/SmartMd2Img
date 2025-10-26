@@ -7,7 +7,7 @@
   },
   "min_complexity_score": {
     "description": "自动转换的复杂度阈值",
-    "type": "int", 
+    "type": "int",
     "default": 2,
     "hint": "数值越高，越不容易触发自动转换"
   },
@@ -26,54 +26,75 @@
   "separate_math_blocks": {
     "description": "将数学公式从文本中分离处理",
     "type": "bool",
-    "default": false, 
+    "default": false,
     "hint": "启用后，数学公式会单独处理"
   },
-  "code_handling_settings": {
-    "description": "代码块处理设置",
-    "type": "object",
-    "items": {
-      "render_code_as_image": {
-        "description": "将代码块渲染为图片",
-        "type": "bool",
-        "default": true,
-        "hint": "启用后代码块会转换为图片"
-      },
-      "send_code_as_file": {
-        "description": "将长代码发送为文件",
-        "type": "bool",
-        "default": false,
-        "hint": "启用后长代码会作为文件发送"
-      },
-      "code_file_threshold": {
-        "description": "代码文件转换阈值（行数）",
-        "type": "int",
-        "default": 10,
-        "hint": "代码超过此行数时，会发送为文件"
-      }
-    }
+  "render_code_as_image": {
+    "description": "将代码块渲染为图片",
+    "type": "bool",
+    "default": true,
+    "hint": "启用后代码块会转换为图片"
   },
-  "math_handling_settings": {
-    "description": "数学公式处理设置",
-    "type": "object",
-    "items": {
-      "render_math_as_image": {
-        "description": "将数学公式渲染为图片",
-        "type": "bool",
-        "default": true,
-        "hint": "启用后数学公式会转换为图片"
-      }
-    }
+  "send_code_as_file": {
+    "description": "将长代码发送为文件",
+    "type": "bool",
+    "default": false,
+    "hint": "启用后长代码会作为文件发送"
+  },
+  "code_file_threshold": {
+    "description": "代码文件转换阈值（行数）",
+    "type": "int",
+    "default": 10,
+    "hint": "代码超过此行数时，会发送为文件"
+  },
+  "render_math_as_image": {
+    "description": "将数学公式渲染为图片",
+    "type": "bool",
+    "default": true,
+    "hint": "启用后数学公式会转换为图片"
   },
   "supported_code_languages": {
     "description": "支持发送为文件的代码语言列表",
     "type": "list",
     "default": [
-      "python", "javascript", "java", "cpp", "c", 
-      "html", "css", "sql", "bash", "shell",
-      "php", "ruby", "go", "rust", "typescript",
-      "json", "xml", "yaml", "markdown"
+      "python",
+      "javascript",
+      "java",
+      "cpp",
+      "c",
+      "html",
+      "css",
+      "sql",
+      "bash",
+      "shell",
+      "php",
+      "ruby",
+      "go",
+      "rust",
+      "typescript",
+      "json",
+      "xml",
+      "yaml",
+      "markdown"
     ],
     "hint": "这些语言的代码可以被发送为文件"
+  },
+  "is_debug_mode": {
+    "description": "启用调试模式",
+    "type": "bool",
+    "default": false,
+    "hint": "启用后会记录详细的调试信息"
+  },
+  "code_font_size": {
+    "description": "代码渲染字体大小",
+    "type": "int",
+    "default": 13,
+    "hint": "设置代码块渲染时的字体大小"
+  },
+  "line_height": {
+    "description": "代码渲染行高",
+    "type": "float",
+    "default": 1.5,
+    "hint": "设置代码块渲染时的行高"
   }
 }
