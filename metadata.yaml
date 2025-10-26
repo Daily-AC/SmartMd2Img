@@ -1,5 +1,5 @@
 name: SmartMd2Img # 这是你的插件的唯一识别名。
-desc: 允许 LLM 将复杂的 Markdown 格式内容转换为图片发送，提升消息的可读性。 # 插件简短描述
+desc: 允许 LLM 将复杂的 Markdown 格式内容转换为图片或文件发送，提升消息的可读性。 # 插件简短描述
 version: v1.0.0 # 插件版本号。格式：v1.1.1 或者 v1.1
 author: Daily-AC # 作者
 repo: https://github.com/Daily-AC/SmartMd2Img # 插件的仓库地址
