@@ -1,5 +1,3 @@
-以下是为你的智能Markdown转图片插件撰写的README文档，它清晰地介绍了项目的功能和使用方法。
-
 # SmartMarkdownConverterPlugin - 智能Markdown转图片插件
 
 一个基于AstrBot框架的智能Markdown转换插件，能够自动检测复杂的Markdown格式并将其转换为图片，确保在QQ等平台中的完美显示。
